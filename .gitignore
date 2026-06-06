@@ -1,0 +1,27 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local databases and logs
+*.log
+*.db
+db.json
+
+# Project outputs (keep directories but ignore generated files)
+outputs/*
+!outputs/.gitkeep
+reports/*
+!reports/.gitkeep
+images/*
+!images/.gitkeep

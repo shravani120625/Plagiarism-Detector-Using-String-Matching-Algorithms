@@ -1,0 +1,9 @@
+Sorting Algorithms and Their Computational Complexity
+
+Sorting is one of the most fundamental operations in computer science. It involves arranging a collection of items in a specific order, typically numerical or lexicographical. Efficient sorting is critical for optimizing the efficiency of other algorithms, such as search and merge algorithms, which require input data to be in sorted lists.
+
+Bubble Sort is a simple comparison-based sorting algorithm. In Bubble Sort, we repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order. This pass through the list is repeated until the list is sorted. The algorithm is named for the way smaller elements "bubble" to the top of the list. However, Bubble Sort has a worst-case and average-case time complexity of O(N^2), making it highly inefficient for large datasets.
+
+Quick Sort, developed by Tony Hoare, is a highly efficient divide-and-conquer sorting algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively. On average, Quick Sort has a running time complexity of O(N log N). In the worst-case scenario, if the pivot is poorly chosen, the complexity can degrade to O(N^2), though randomized pivot selection mitigates this.
+
+Merge Sort is another popular divide-and-conquer sorting algorithm invented by John von Neumann in 1945. It divides the unsorted list into N sub-lists, each containing one element, and then repeatedly merges sub-lists to produce new sorted sub-lists until there is only one sorted list remaining. Merge Sort is highly stable and guarantees a time complexity of O(N log N) in all cases (worst, average, and best). However, it requires O(N) additional auxiliary space to hold the elements during the merging process.

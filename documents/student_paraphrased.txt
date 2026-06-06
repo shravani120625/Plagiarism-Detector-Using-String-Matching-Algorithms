@@ -1,0 +1,9 @@
+Understanding Graph Algorithms and Shortest Path Calculations
+
+A graph represents a mathematical structure formed by a set of nodes and edges connecting them. To analyze graphs, we use search methods. The two primary techniques for scanning graphs are BFS and DFS.
+
+Breadth-First Search (BFS) starts at a chosen source node and investigates every adjacent neighbor node at the current level before continuing to deeper nodes. A FIFO queue structure is used to manage the order of node visits in BFS. The computational complexity of this search is O(V + E). It is very effective for finding the shortest path in graphs without edge weights.
+
+Depth-First Search (DFS) begins at the source and traverses as deeply as possible along a branch before retreating. DFS relies on recursion or a LIFO stack. The complexity is similarly O(V + E). It is frequently used for topological sorting or maze solving.
+
+Dijkstra's Algorithm is a greedy method that computes the shortest path from a single source node to all other nodes on graphs where edge weights are non-negative. It tracks visited nodes and tentative values. At each step, it selects the node with the lowest distance, visits it, and updates neighboring nodes.

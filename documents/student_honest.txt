@@ -1,0 +1,7 @@
+Tree Data Structures and Traversal Methodologies
+
+Trees are hierarchical structures composed of nodes linked by directed edges. A binary tree is a specific type where each node has at most two children, commonly referred to as the left child and right child. Traversing trees is essential for processing their contents.
+
+There are three primary depth-first traversal methods: pre-order, in-order, and post-order. Pre-order visits the root node first, then recursively walks the left sub-tree, followed by the right sub-tree. In-order visits the left sub-tree, then the root, and finally the right sub-tree, which produces sorted output for binary search trees. Post-order visits the children first and the root last, making it useful for deleting nodes or evaluating mathematical expression trees.
+
+Unlike linear lists, trees have recursive structures, and traversal is naturally implemented using recursion. However, iterative approaches using explicit stacks can also be used to avoid call stack overflow on deep trees.

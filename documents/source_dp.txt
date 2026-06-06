@@ -1,0 +1,10 @@
+Introduction to Dynamic Programming and Subproblem Optimization
+
+Dynamic Programming (DP) is an algorithmic paradigm that solves complex problems by breaking them down into simpler overlapping subproblems, solving each subproblem exactly once, and storing their solutions to avoid redundant computations. It is an optimization over plain recursion.
+
+The two main approaches to dynamic programming are Memoization (Top-Down) and Tabulation (Bottom-Up).
+Memoization starts with the original problem and recursively breaks it down. When a subproblem is solved, its result is cached (typically in a hash table or array). If the subproblem is encountered again, the cached result is returned directly. Tabulation, on the other hand, is an iterative approach that solves all subproblems starting from the smallest base cases, filling up an n-dimensional table (DP array) until the target problem state is reached.
+
+A classic example of dynamic programming is the Longest Common Subsequence (LCS) problem. The goal is to find the longest subsequence common to two sequences. If the sequences are of lengths M and N, a naive recursive solution runs in exponential O(2^N) time. By applying tabulation and storing intermediate matches in a 2D grid, dynamic programming reduces the time complexity to O(M * N) and space complexity to O(M * N), which can be further optimized.
+
+Another standard DP problem is the 0/1 Knapsack Problem. Given weights and values of N items, we need to put these items in a knapsack of capacity W to get the maximum total value. The "0/1" constraint means each item must be copied completely or left behind; we cannot take fractions of an item. The DP solution constructs a table of size N x W, resulting in a time complexity of O(N * W).

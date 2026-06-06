@@ -1,0 +1,9 @@
+Graph Traversal and Shortest Path Algorithms
+
+A graph is a non-linear data structure consisting of a finite set of vertices (or nodes) and a set of edges connecting these vertices. Graph traversal algorithms allow us to visit all nodes in a graph systematically. The two primary methods for traversing graphs are Breadth-First Search (BFS) and Depth-First Search (DFS).
+
+Breadth-First Search (BFS) starts at a selected node, called the root or source node, and explores all of its neighboring nodes at the current depth level before moving on to nodes at the next depth level. BFS utilizes a Queue data structure (FIFO) to track which nodes to visit next. The time complexity of BFS is O(V + E), where V is the number of vertices and E is the number of edges. BFS is particularly useful for finding the shortest path in an unweighted graph.
+
+Depth-First Search (DFS) starts at the source node and explores as far as possible along each branch before backtracking. DFS utilizes a Stack data structure (LIFO) or recursion. The time complexity of DFS is also O(V + E). It is commonly used for solving puzzles, topological sorting, and finding strongly connected components.
+
+Dijkstra's Algorithm is a greedy algorithm that finds the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights. It maintains a set of visited vertices and a set of tentative distances. At each step, it selects the unvisited vertex with the minimum tentative distance, visits it, and relaxes its neighbors. Utilizing a binary heap or priority queue, Dijkstra's algorithm runs in O((V + E) log V) time complexity.

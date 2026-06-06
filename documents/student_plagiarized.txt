@@ -1,0 +1,7 @@
+An Analysis of Sorting Techniques and Subproblems
+
+In this report, we discuss sorting and optimization methods. Sorting is one of the most fundamental operations in computer science. It involves arranging a collection of items in a specific order, typically numerical or lexicographical. Efficient sorting is critical for optimizing the efficiency of other algorithms, such as search and merge algorithms, which require input data to be in sorted lists.
+
+Next, let's look at Quick Sort. Quick Sort, developed by Tony Hoare, is a highly efficient divide-and-conquer sorting algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+
+Finally, we explore dynamic programming. Dynamic Programming (DP) is an algorithmic paradigm that solves complex problems by breaking them down into simpler overlapping subproblems, solving each subproblem exactly once, and storing their solutions to avoid redundant computations. The two main approaches to dynamic programming are Memoization (Top-Down) and Tabulation (Bottom-Up).
